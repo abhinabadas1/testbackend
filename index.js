@@ -17,6 +17,12 @@ app.get('/facebook',(req,res)=>{
 app.get('/login',(req,res)=>{
     res.send('<h1>Hey there Delialah<h1>')
 })
+app.get('/fiverr',(req,res)=>{
+    res.json({
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/users/users#get-a-user"
+      })
+})
 app.listen(process.env.PORT,()=>{
     console.log(`Example app listening on port ${process.env.PORT}`)
 })
